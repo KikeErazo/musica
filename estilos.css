@@ -89,6 +89,12 @@ audio {
 
 #lista-canciones {
   /* Estilos para la lista de canciones */
+  display: block;
+  justify-content: center;
+  align-items: center;
+  list-style-type: none; /* Elimina las viñetas */
+  padding: 0; /* Elimina el espaciado interno */
+  margin: 0; /* Elimina los márgenes externos */
 }
 
 #lista-canciones ul {
@@ -117,10 +123,11 @@ audio {
 
 
 #reproductor-musica {
-  margin: 10px auto; /* Ajusta el margen según tus necesidades */
+  margin: 0px auto; /* Ajusta el margen según tus necesidades */
+  
 }
 #nombre-cancion-actual {
-  width: 100%; /* O ajusta según tus necesidades */
+  width: 50%; /* O ajusta según tus necesidades */
 }
 #controles-adicionales button {
   font-size: 20px; /* Ajusta según tus preferencias */
@@ -128,5 +135,6 @@ audio {
 audio {
   max-width: 100%; /* Ajusta según tus necesidades */
 }
+
 
 }
