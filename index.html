@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <link rel="shortcut icon" href="imagenes/musica.png" />mu
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>♪ENRAZ♪Reproductor de Música</title>
+  <link rel="stylesheet" href="estilos.css">
+</head>
+
+<body>
+
+
+
+
+  <div id="reproductor-musica">
+    <P>REPRODUCTOR DE MÚSICA ♪ ENRAZ ♪</p>
+
+  <div id="nombre-cancion-actual"> ♪ ♫ Más Música...
+  </div>
+      
+
+    <audio id="audio-player" controls preload="none">
+      <source src="canciones/001. Led Zeppelin - Stairway to Heaven.mp3" type="audio/mpeg">
+      Tu navegador no soporta el elemento de audio.
+    </audio>
+
+
+
+    <div id="controles-adicionales">
+      <button id="boton-anterior">♪◀</button> <!-- Ícono de flecha hacia la izquierda -->
+      <button id="boton-siguiente">▶♪</button> <!-- Ícono de flecha hacia la derecha -->
+      <button id="boton-aleatorio">▲▼</button>
+
+    </div>
+
+
+
+    <div id="contenedor-lista" style="height: 300px; overflow-y: scroll;">
+      <ul id="lista-canciones">
+
+
+        <!-- Tus elementos de lista aquí -->
+      </ul>
+    </div>
+
+
+
+
+    <script src="scripts.js"></script>
+</body>
+
+</html>

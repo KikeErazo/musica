@@ -1,0 +1,103 @@
+/* estilos.css */
+body {
+  font-family: Arial, sans-serif;
+  background-color: black;
+  /* Fondo negro para todo el cuerpo de la página */
+  color: white;
+  /* Texto blanco para todo el cuerpo de la página */
+}
+
+#reproductor-musica {
+  text-align: center;
+  max-width: 600px;
+  margin: 0 auto;
+  background-color: black;
+  /* Fondo negro para el reproductor */
+  color: white;
+  /* Texto blanco para el reproductor */
+}
+
+/* Para asegurarte de que todos los textos dentro del reproductor sean blancos */
+#reproductor-musica,
+#reproductor-musica * {
+  color: white;
+  /* Texto blanco para el reproductor y todos sus elementos internos */
+}
+
+/* Para los botones, si deseas que también tengan fondo negro y texto blanco */
+#controles-adicionales button {
+  background-color: black;
+  /* Fondo negro para los botones */
+  color: white;
+  /* Texto blanco para los botones */
+}
+
+audio {
+  width: 100%;
+}
+
+#nombre-cancion-actual {
+  color: #ff0000;
+
+}
+
+#controles-adicionales {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  /* Espacio entre los botones */
+}
+
+#controles-adicionales button {
+  background: none;
+  border: none;
+  font-size: 24px;
+  /* Tamaño del ícono */
+  cursor: pointer;
+}
+
+#controles-adicionales button:hover {
+  color: #555;
+  /* Cambia el color al pasar el mouse */
+}
+
+
+#contenedor-lista {
+  text-align: justify;
+  max-height: 300px;
+  /* Ajusta esto al tamaño que prefieras */
+  overflow-y: auto;
+  /* Esto permite el desplazamiento vertical si el contenido es más largo que el contenedor */
+}
+
+
+
+#controles-adicionales {
+  /* Estilos para tus botones adicionales */
+}
+
+#lista-canciones {
+  /* Estilos para la lista de canciones */
+}
+
+#lista-canciones ul {
+  list-style: none;
+  padding: 0;
+}
+
+#lista-canciones li {
+  cursor: pointer;
+  padding: 5px;
+  border-bottom: 1px solid #ccc;
+}
+
+/* Estilos al pasar el mouse */
+#lista-canciones li:hover {
+  background-color: #ff0000;
+}
+
+
+@media (max-width: 600px) {
+  /* Estilos para dispositivos móviles */
+}
