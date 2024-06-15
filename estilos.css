@@ -18,8 +18,8 @@ body {
 }
 
 /* Para asegurarte de que todos los textos dentro del reproductor sean blancos */
-#reproductor-musica,
-#reproductor-musica * {
+
+#reproductor-musica {
   color: white;
   /* Texto blanco para el reproductor y todos sus elementos internos */
 }
@@ -100,12 +100,14 @@ audio {
 #lista-canciones ul {
   list-style: none;
   padding: 0;
+  
 }
 
 #lista-canciones li {
   cursor: pointer;
   padding: 5px;
   border-bottom: 1px solid #ccc;
+  
 }
 
 /* Estilos al pasar el mouse */

@@ -109,7 +109,7 @@ var nombresCanciones = [
   "052. Journey - Faithfully.mp3",
   "053. Judas Priest - Angel.mp3",
   "054. Led Zeppelin - Babe I'm Gonna Leave You (Remaster).mp3",
-  "055. Motley Crüe - Too Young To Fall In Love.mp3",
+  "055. Motley Crue - Too Young To Fall In Love.mp3",
   "056. Rainbow - Can't Let You Go.mp3",
   "057. REO Speedwagon - Keep on Loving You.mp3",
   "058. Aerosmith - What Could Have Been Love.mp3",
@@ -181,3 +181,6 @@ botonAleatorio.addEventListener('click', function () {
   var indiceAleatorio = Math.floor(Math.random() * listaCanciones.length);
   reproducirIndice(indiceAleatorio);
 });
+
+
+
