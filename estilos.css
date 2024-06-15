@@ -37,28 +37,38 @@ audio {
 }
 
 #nombre-cancion-actual {
+  animation: mover 15s linear infinite;
   color: #ff0000;
+  white-space: nowrap;
+  overflow: hidden;
+  width: 300px; /* Ancho deseado */
+  -webkit-text-stroke: 2px #ff0000;
 
 }
 
+@keyframes mover {
+  50% { transform: translateX(-100%); }
+  50% { transform: translateX(100%); }
+}
+
 #controles-adicionales {
+ 
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 10px;
-  /* Espacio entre los botones */
+  gap: 10px; /* Espacio entre los botones */
+  
 }
 
 #controles-adicionales button {
   background: none;
   border: none;
-  font-size: 24px;
-  /* Tamaño del ícono */
+  font-size: 15px;  /* Tamaño del ícono */
   cursor: pointer;
 }
 
 #controles-adicionales button:hover {
-  color: #555;
+  color: #fa0808;
   /* Cambia el color al pasar el mouse */
 }
 
@@ -100,4 +110,23 @@ audio {
 
 @media (max-width: 600px) {
   /* Estilos para dispositivos móviles */
+
+  body {
+    font-size: 16px; /* Ajusta según tus preferencias */
+}
+
+
+#reproductor-musica {
+  margin: 10px auto; /* Ajusta el margen según tus necesidades */
+}
+#nombre-cancion-actual {
+  width: 100%; /* O ajusta según tus necesidades */
+}
+#controles-adicionales button {
+  font-size: 20px; /* Ajusta según tus preferencias */
+}
+audio {
+  max-width: 100%; /* Ajusta según tus necesidades */
+}
+
 }
